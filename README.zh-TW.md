@@ -160,8 +160,8 @@
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub
 
-![FanFantom9452's GitHub stats](https://github-readme-stats.vercel.app/api?username=FanFantom9452&show_icons=true&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=FanFantom9452&layout=compact&hide_border=true&langs_count=8)
+![Followers](https://img.shields.io/github/followers/FanFantom9452?style=flat&logo=github&label=追蹤者&color=181717)
+![Stars](https://img.shields.io/github/stars/FanFantom9452?style=flat&logo=github&label=總星數&color=181717)
+![Profile views](https://komarev.com/ghpvc/?username=FanFantom9452&style=flat&color=181717&label=造訪次數)
