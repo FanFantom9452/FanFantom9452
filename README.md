@@ -120,58 +120,56 @@ product.
 ## 🤖 How I Collaborate With Claude Code
 
 Below is the plugin set I personally lean on day to day — also a
-reasonable starter list if you're picking your own. The two I touch
-most are **caveman** and **superpowers**; the rest come out when the
-situation calls for them.
+reasonable starter list if you're picking your own. The ones I reach
+for every session are **ponytail**, **superpowers**, **context7**, and
+**taste-skill**; everything else is installed but stays on the bench
+until the situation calls for it.
 
 ### Third-Party Marketplaces
 
 | Marketplace | Source |
 | --- | --- |
-| caveman | <https://github.com/JuliusBrussee/caveman> |
+| ponytail | <https://github.com/DietrichGebert/ponytail> |
+| taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
 
-### ⭐ Daily drivers
+### ⭐ Primary
 
-Fire on almost every session:
+The four I actually reach for every session:
 
+- **`ponytail`** — lazy-senior-dev mode: YAGNI, stdlib / native before deps, shortest working diff.
 - **`superpowers`** — brainstorming, TDD, debugging, verification-before-completion.
-- **`caveman`** — token-compressed communication mode.
-- **`commit-commands`** — guided commit / push / PR flow.
 - **`context7`** — live library docs lookup.
+- **`taste-skill`** — anti-slop frontend / design direction (brand kits, redesigns, UI taste).
+
+### 🧰 Installed (not primary)
+
+On hand, pulled out when the situation calls for it:
+
 - **`pr-review-toolkit`** — comprehensive multi-agent PR review.
-- **`frontend-design`** — production-grade UI work.
-
-### 📌 Recommended
-
-Lower-frequency but high-value:
-
-- **`karpathy-guidelines`** — behavioural guard-rails for LLM coding mistakes.
-- **`skill-creator`** — author / maintain custom skills.
-- **`claude-md-management`** — keep CLAUDE.md files healthy.
 - **`code-review`** — focused single-PR review.
-- **`agent-sdk-dev`** — scaffold and validate Claude Agent SDK apps.
+- **`commit-commands`** — guided commit / push / PR flow.
 - **`feature-dev`** — guided feature implementation flow.
 - **`code-simplifier`** — refactor recently-touched code without changing behaviour.
-
-### 🧰 Also installed
-
-Domain / situational:
-
-- **`huggingface-skills`** *(official bundle)* — wraps the five HF skills below.
-- **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** — HF workflow toolkits.
+- **`frontend-design`** — production-grade UI work.
+- **`skill-creator`** — author / maintain custom skills.
+- **`claude-md-management`** — keep CLAUDE.md files healthy.
+- **`agent-sdk-dev`** — scaffold and validate Claude Agent SDK apps.
+- **`karpathy-guidelines`** — behavioural guard-rails for LLM coding mistakes.
 - **`github`** — GitHub CLI/API integration.
 - **`playwright`** — browser automation for testing & verification.
 - **`greptile`** — semantic code search.
 - **`explanatory-output-style`** — educational-mode output styling.
 - **`security-guidance`** — security review prompts.
+- **`huggingface-skills`** *(official bundle)* — wraps the five HF skills below.
+- **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** — HF workflow toolkits.
 
 ### 🔌 Language servers
 
 - **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`**
 
-*Last reviewed: 2026-05-19.*
+*Last reviewed: 2026-06-20.*
 
 ---
 

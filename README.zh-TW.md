@@ -107,56 +107,54 @@
 ## 🤖 我如何和 Claude Code 共同協作
 
 底下是我平常開發的時候喜歡用的清單，也推薦給大家做使用，
-最常用的應該是caveman / superpower 這兩個插件，其他則是有機會才用到。
+最常用的是 ponytail / superpowers / context7 / taste-skill 這四個，
+其餘則是有安裝、有機會才會拿出來用。
 
 ### 第三方 Marketplace
 
 | Marketplace | 來源 |
 | --- | --- |
-| caveman | <https://github.com/JuliusBrussee/caveman> |
+| ponytail | <https://github.com/DietrichGebert/ponytail> |
+| taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
 
-### ⭐ 常用主力
+### ⭐ 主力
 
-幾乎每個 session 都會用到的：
+真的每個 session 都會拿出來用的四個：
 
+- **`ponytail`** —— 懶人資深工程師模式：YAGNI、優先用標準庫／原生功能、最短可行 diff。
 - **`superpowers`** —— brainstorming、TDD、debugging、verification-before-completion。
-- **`caveman`** —— Token 壓縮溝通模式。
-- **`commit-commands`** —— commit／push／PR 引導流程。
 - **`context7`** —— 即時函式庫文件查詢。
+- **`taste-skill`** —— 反 AI 罐頭味的前端／設計方向（品牌視覺、改版、UI 品味）。
+
+### 🧰 已安裝（非主力）
+
+有裝著，看情況才拿出來用：
+
 - **`pr-review-toolkit`** —— 多 agent 完整 PR review。
-- **`frontend-design`** —— 高品質 UI 開發。
-
-### 📌 推薦
-
-頻率較低但價值高的：
-
-- **`karpathy-guidelines`** —— LLM 寫 code 常見錯誤的行為護欄。
-- **`skill-creator`** —— 撰寫／維護自製 skill。
-- **`claude-md-management`** —— 替 CLAUDE.md 做體檢與微調。
 - **`code-review`** —— 聚焦單一 PR 的 review。
-- **`agent-sdk-dev`** —— 建立／驗證 Claude Agent SDK app。
+- **`commit-commands`** —— commit／push／PR 引導流程。
 - **`feature-dev`** —— 引導式功能實作流程。
 - **`code-simplifier`** —— 重構近期改動的程式碼，行為不變。
-
-### 🧰 額外安裝
-
-領域類／情境類：
-
-- **`huggingface-skills`** *(官方 bundle)* —— 包下面五個 HF skill。
-- **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** —— HF 工作流工具集。
+- **`frontend-design`** —— 高品質 UI 開發。
+- **`skill-creator`** —— 撰寫／維護自製 skill。
+- **`claude-md-management`** —— 替 CLAUDE.md 做體檢與微調。
+- **`agent-sdk-dev`** —— 建立／驗證 Claude Agent SDK app。
+- **`karpathy-guidelines`** —— LLM 寫 code 常見錯誤的行為護欄。
 - **`github`** —— GitHub CLI / API 整合。
 - **`playwright`** —— 瀏覽器自動化測試與驗證。
 - **`greptile`** —— 語意化程式碼搜尋。
 - **`explanatory-output-style`** —— 教學模式輸出風格。
 - **`security-guidance`** —— 安全 review 提示。
+- **`huggingface-skills`** *(官方 bundle)* —— 包下面五個 HF skill。
+- **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** —— HF 工作流工具集。
 
 ### 🔌 Language Server
 
 - **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`**
 
-*最後檢視：2026-05-19。*
+*最後檢視：2026-06-20。*
 
 ---
 
