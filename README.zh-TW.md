@@ -107,7 +107,7 @@
 ## 🤖 我如何和 Claude Code 共同協作
 
 底下是我平常開發的時候喜歡用的清單，也推薦給大家做使用，
-最常用的是 ponytail / superpowers / context7 / taste-skill 這四個，
+最常用的是 ponytail / caveman / superpowers / context7 / taste-skill 這五個，
 其餘則是有安裝、有機會才會拿出來用。
 
 ### 第三方 Marketplace
@@ -115,15 +115,17 @@
 | Marketplace | 來源 |
 | --- | --- |
 | ponytail | <https://github.com/DietrichGebert/ponytail> |
+| caveman | <https://github.com/JuliusBrussee/caveman> |
 | taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
 
 ### ⭐ 主力
 
-真的每個 session 都會拿出來用的四個：
+真的每個 session 都會拿出來用的五個：
 
 - **`ponytail`** —— 懶人資深工程師模式：YAGNI、優先用標準庫／原生功能、最短可行 diff。
+- **`caveman`** —— 極簡 terse 輸出模式（廢話 token 砍約 75%）。ponytail 明文要搭它跑 ——「pair with Caveman for terse prose」—— 所以兩個每個 session 一起出動：ponytail 砍 code、caveman 砍話。兩者的程式碼區塊、commit、安全提示都維持正常不壓縮。
 - **`superpowers`** —— brainstorming、TDD、debugging、verification-before-completion。
 - **`context7`** —— 即時函式庫文件查詢。
 - **`taste-skill`** —— 反 AI 罐頭味的前端／設計方向（品牌視覺、改版、UI 品味）。
@@ -154,7 +156,7 @@
 
 - **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`**
 
-*最後檢視：2026-06-20。*
+*最後檢視：2026-06-27。*
 
 ---
 

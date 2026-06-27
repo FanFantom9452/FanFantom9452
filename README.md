@@ -121,24 +121,26 @@ product.
 
 Below is the plugin set I personally lean on day to day — also a
 reasonable starter list if you're picking your own. The ones I reach
-for every session are **ponytail**, **superpowers**, **context7**, and
-**taste-skill**; everything else is installed but stays on the bench
-until the situation calls for it.
+for every session are **ponytail**, **caveman**, **superpowers**,
+**context7**, and **taste-skill**; everything else is installed but stays
+on the bench until the situation calls for it.
 
 ### Third-Party Marketplaces
 
 | Marketplace | Source |
 | --- | --- |
 | ponytail | <https://github.com/DietrichGebert/ponytail> |
+| caveman | <https://github.com/JuliusBrussee/caveman> |
 | taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
 
 ### ⭐ Primary
 
-The four I actually reach for every session:
+The five I actually reach for every session:
 
 - **`ponytail`** — lazy-senior-dev mode: YAGNI, stdlib / native before deps, shortest working diff.
+- **`caveman`** — ultra-terse prose mode (~75% chatter token cut). ponytail explicitly pairs with it — *"pair with Caveman for terse prose"* — so the two ride together every session: ponytail trims the code, caveman trims the talk. Code blocks, commits, and security notes stay normal in both.
 - **`superpowers`** — brainstorming, TDD, debugging, verification-before-completion.
 - **`context7`** — live library docs lookup.
 - **`taste-skill`** — anti-slop frontend / design direction (brand kits, redesigns, UI taste).
@@ -169,7 +171,7 @@ On hand, pulled out when the situation calls for it:
 
 - **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`**
 
-*Last reviewed: 2026-06-20.*
+*Last reviewed: 2026-06-27.*
 
 ---
 
