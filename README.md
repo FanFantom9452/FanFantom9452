@@ -51,6 +51,9 @@ below stay deliberately broad.
 
 [![Tools](https://skillicons.dev/icons?i=git,github,vscode)](https://skillicons.dev)
 
+![FileZilla](https://img.shields.io/badge/FileZilla-BF0000?style=flat&logo=filezilla&logoColor=white)
+![FTP/SFTP](https://img.shields.io/badge/FTP%2FSFTP-grey?style=flat)
+
 **ML / NLP / Misc**
 
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
@@ -122,7 +125,8 @@ product.
 Below is the plugin set I personally lean on day to day — also a
 reasonable starter list if you're picking your own. The ones I reach
 for every session are **ponytail**, **caveman**, **superpowers**,
-**context7**, and **taste-skill**; everything else is installed but stays
+**context7**, and **playwright**; design work has its own shelf; a few
+more shape behaviour passively without ever being called; the rest stay
 on the bench until the situation calls for it.
 
 ### Third-Party Marketplaces
@@ -134,6 +138,7 @@ on the bench until the situation calls for it.
 | taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
+| designer-skills | <https://github.com/Owl-Listener/designer-skills> |
 
 ### ⭐ Primary
 
@@ -143,9 +148,36 @@ The five I actually reach for every session:
 - **`caveman`** — ultra-terse prose mode (~75% chatter token cut). ponytail explicitly pairs with it — *"pair with Caveman for terse prose"* — so the two ride together every session: ponytail trims the code, caveman trims the talk. Code blocks, commits, and security notes stay normal in both.
 - **`superpowers`** — brainstorming, TDD, debugging, verification-before-completion.
 - **`context7`** — live library docs lookup.
-- **`taste-skill`** — anti-slop frontend / design direction (brand kits, redesigns, UI taste).
+- **`playwright`** — browser automation; a UI change isn't done until it's been driven in a real browser.
 
-### 🧰 Installed (not primary)
+### 🎨 Frontend & UX design
+
+Pulled out whenever the work touches UI/UX:
+
+- **[`taste-skill`](https://github.com/Leonxlnx/taste-skill)** — anti-slop frontend / design direction (brand kits, redesigns, UI taste).
+- **[`frontend-design`](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design)** — production-grade UI work (official Anthropic plugin).
+- **[`designer-skills`](https://github.com/Owl-Listener/designer-skills)** — enterprise-grade systemic UX pack (97 skills / 9
+  plugins); I mainly pull the **`interaction-design`** plugin (form design,
+  error handling, loading states, navigation, state machines) and
+  **`ux-strategy`** (information architecture, service blueprints).
+- **`lobehub ux`** — LobeHub's production UX execution checklist
+  (empty/loading/error states, draft protection — never lose user input,
+  async confirm→progress→done patterns); copied manually from
+  [their monorepo](https://github.com/lobehub/lobehub/blob/main/.agents/skills/ux/SKILL.md).
+- **`impeccable`** — [design-language toolkit](https://github.com/pbakaus/impeccable);
+  I only reach for the system-side commands (`audit`, `harden`, `onboard`,
+  `clarify`, `critique`) — the visual ones stay off, taste-skill owns that lane.
+
+### 🔄 Always on, never called
+
+Installed once, then they quietly shape every session on their own:
+
+- **`karpathy-guidelines`** — behavioural guard-rails for LLM coding mistakes.
+- **`explanatory-output-style`** — educational-mode output styling.
+- **`security-guidance`** — security review prompts.
+- **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`** — language servers for live diagnostics.
+
+### 🧰 Bench (not primary)
 
 On hand, pulled out when the situation calls for it:
 
@@ -154,24 +186,15 @@ On hand, pulled out when the situation calls for it:
 - **`commit-commands`** — guided commit / push / PR flow.
 - **`feature-dev`** — guided feature implementation flow.
 - **`code-simplifier`** — refactor recently-touched code without changing behaviour.
-- **`frontend-design`** — production-grade UI work.
 - **`skill-creator`** — author / maintain custom skills.
 - **`claude-md-management`** — keep CLAUDE.md files healthy.
 - **`agent-sdk-dev`** — scaffold and validate Claude Agent SDK apps.
-- **`karpathy-guidelines`** — behavioural guard-rails for LLM coding mistakes.
 - **`github`** — GitHub CLI/API integration.
-- **`playwright`** — browser automation for testing & verification.
 - **`greptile`** — semantic code search.
-- **`explanatory-output-style`** — educational-mode output styling.
-- **`security-guidance`** — security review prompts.
 - **`huggingface-skills`** *(official bundle)* — wraps the five HF skills below.
 - **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** — HF workflow toolkits.
 
-### 🔌 Language servers
-
-- **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`**
-
-*Last reviewed: 2026-06-27.*
+*Last reviewed: 2026-07-10.*
 
 ---
 

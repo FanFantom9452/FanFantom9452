@@ -39,6 +39,9 @@
 
 [![Tools](https://skillicons.dev/icons?i=git,github,vscode)](https://skillicons.dev)
 
+![FileZilla](https://img.shields.io/badge/FileZilla-BF0000?style=flat&logo=filezilla&logoColor=white)
+![FTP/SFTP](https://img.shields.io/badge/FTP%2FSFTP-grey?style=flat)
+
 **ML / NLP / 其他**
 
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
@@ -107,8 +110,9 @@
 ## 🤖 我如何和 Claude Code 共同協作
 
 底下是我平常開發的時候喜歡用的清單，也推薦給大家做使用，
-最常用的是 ponytail / caveman / superpowers / context7 / taste-skill 這五個，
-其餘則是有安裝、有機會才會拿出來用。
+最常用的是 ponytail / caveman / superpowers / context7 / playwright 這五個；
+設計工作有專屬一區；另外幾個裝了就默默生效、不用主動叫；
+其餘看情況才拿出來用。
 
 ### 第三方 Marketplace
 
@@ -119,6 +123,7 @@
 | taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
+| designer-skills | <https://github.com/Owl-Listener/designer-skills> |
 
 ### ⭐ 主力
 
@@ -128,9 +133,36 @@
 - **`caveman`** —— 極簡 terse 輸出模式（廢話 token 砍約 75%）。ponytail 明文要搭它跑 ——「pair with Caveman for terse prose」—— 所以兩個每個 session 一起出動：ponytail 砍 code、caveman 砍話。兩者的程式碼區塊、commit、安全提示都維持正常不壓縮。
 - **`superpowers`** —— brainstorming、TDD、debugging、verification-before-completion。
 - **`context7`** —— 即時函式庫文件查詢。
-- **`taste-skill`** —— 反 AI 罐頭味的前端／設計方向（品牌視覺、改版、UI 品味）。
+- **`playwright`** —— 瀏覽器自動化；UI 改動沒在真瀏覽器跑過就不算完成。
 
-### 🧰 已安裝（非主力）
+### 🎨 前端／UX 設計
+
+只要工作碰到 UI/UX 就出動：
+
+- **[`taste-skill`](https://github.com/Leonxlnx/taste-skill)** —— 反 AI 罐頭味的前端／設計方向（品牌視覺、改版、UI 品味）。
+- **[`frontend-design`](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design)** —— 高品質 UI 開發（Anthropic 官方 plugin）。
+- **[`designer-skills`](https://github.com/Owl-Listener/designer-skills)** —— 企業級系統層 UX 技能包（97 skill／9 plugin），
+  我主要抽 **`interaction-design`**（表單設計、錯誤處理、載入狀態、導覽、
+  狀態機）和 **`ux-strategy`**（資訊架構、service blueprint）兩個 plugin 用。
+- **`lobehub ux`** —— LobeHub 上線產品的 UX 執行清單
+  （空／載入／錯誤狀態、草稿保護——絕不弄丟使用者輸入、
+  async confirm→progress→done 操作模式），從
+  [他們的 monorepo](https://github.com/lobehub/lobehub/blob/main/.agents/skills/ux/SKILL.md)
+  手動抄一份 SKILL.md 進來。
+- **`impeccable`** —— [設計語言工具箱](https://github.com/pbakaus/impeccable)，
+  我只用系統面的指令（`audit`、`harden`、`onboard`、`clarify`、`critique`），
+  視覺類指令不開——那條線歸 taste-skill 管。
+
+### 🔄 非主動呼叫，但必裝
+
+裝一次就好，之後每個 session 默默生效、不用叫：
+
+- **`karpathy-guidelines`** —— LLM 寫 code 常見錯誤的行為護欄。
+- **`explanatory-output-style`** —— 教學模式輸出風格。
+- **`security-guidance`** —— 安全 review 提示。
+- **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`** —— language server 即時診斷。
+
+### 🧰 非主力（替補）
 
 有裝著，看情況才拿出來用：
 
@@ -139,24 +171,15 @@
 - **`commit-commands`** —— commit／push／PR 引導流程。
 - **`feature-dev`** —— 引導式功能實作流程。
 - **`code-simplifier`** —— 重構近期改動的程式碼，行為不變。
-- **`frontend-design`** —— 高品質 UI 開發。
 - **`skill-creator`** —— 撰寫／維護自製 skill。
 - **`claude-md-management`** —— 替 CLAUDE.md 做體檢與微調。
 - **`agent-sdk-dev`** —— 建立／驗證 Claude Agent SDK app。
-- **`karpathy-guidelines`** —— LLM 寫 code 常見錯誤的行為護欄。
 - **`github`** —— GitHub CLI / API 整合。
-- **`playwright`** —— 瀏覽器自動化測試與驗證。
 - **`greptile`** —— 語意化程式碼搜尋。
-- **`explanatory-output-style`** —— 教學模式輸出風格。
-- **`security-guidance`** —— 安全 review 提示。
 - **`huggingface-skills`** *(官方 bundle)* —— 包下面五個 HF skill。
 - **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** —— HF 工作流工具集。
 
-### 🔌 Language Server
-
-- **`typescript-lsp`** · **`pyright-lsp`** · **`rust-analyzer-lsp`**
-
-*最後檢視：2026-06-27。*
+*最後檢視：2026-07-10。*
 
 ---
 
