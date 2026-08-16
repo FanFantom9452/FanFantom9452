@@ -1,3 +1,5 @@
+[🧰 **常用工具** — 我在做、也在用的 Windows 小工具與 Claude Code 開發包](https://github.com/FanFantom9452/FanFantom9452/blob/main/TOOLS.zh-TW.md)
+
 <div align="right">
 
 [English](./README.md) · [**繁體中文**](./README.zh-TW.md)

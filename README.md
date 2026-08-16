@@ -1,3 +1,5 @@
+[🧰 **Tools** — small Windows utilities & Claude Code kits I build and use](https://github.com/FanFantom9452/FanFantom9452/blob/main/TOOLS.md)
+
 <div align="right">
 
 [**English**](./README.md) · [繁體中文](./README.zh-TW.md)
