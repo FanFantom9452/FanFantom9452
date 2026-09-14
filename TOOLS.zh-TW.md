@@ -20,7 +20,8 @@
 
 | 工具 | 這是什麼 | 作者 |
 | --- | --- | --- |
-| [claude-kit](https://github.com/FanFantom9452/claude-kit) | 一行指令裝好我整套 Claude Code 環境 | [@FanFantom9452](https://github.com/FanFantom9452) · 含 [@JuliusBrussee](https://github.com/JuliusBrussee) / [@DietrichGebert](https://github.com/DietrichGebert) 的 fork |
+| [claude-kit](https://github.com/FanFantom9452/claude-kit) | 一行指令裝好我整套 Claude Code 環境 | [@FanFantom9452](https://github.com/FanFantom9452) · 含 [@DietrichGebert](https://github.com/DietrichGebert) 的 fork |
+| [FanKeel](https://github.com/FanFantom9452/FanKeel) | 讓一個 Claude Code session 只咬一個任務 —— 七個階段，每次提問都重述一遍 | [@FanFantom9452](https://github.com/FanFantom9452) |
 | [ClaudeCodeCLI-TokenBar](https://github.com/FanFantom9452/ClaudeCodeCLI-TokenBar) | 兩行式狀態列，context 與額度做成進度條 | [@FanFantom9452](https://github.com/FanFantom9452) |
 | [AI-Coding-Security](https://github.com/FanFantom9452/AI-Coding-Security) | 抓幻覺套件、typosquat、agent 權限開太大 | [@FanFantom9452](https://github.com/FanFantom9452) |
 

@@ -126,17 +126,22 @@ product.
 
 Below is the plugin set I personally lean on day to day — also a
 reasonable starter list if you're picking your own. The ones I reach
-for every session are **ponytail**, **caveman**, **superpowers**,
+for every session are **fankeel**, **ponytail**, **superpowers**,
 **context7**, and **playwright**; design work has its own shelf; a few
 more shape behaviour passively without ever being called; the rest stay
 on the bench until the situation calls for it.
+
+### My Own Marketplaces
+
+| Marketplace | Source |
+| --- | --- |
+| fankeel | <https://github.com/FanFantom9452/FanKeel> |
 
 ### Third-Party Marketplaces
 
 | Marketplace | Source |
 | --- | --- |
 | ponytail | <https://github.com/DietrichGebert/ponytail> |
-| caveman | <https://github.com/JuliusBrussee/caveman> |
 | taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
@@ -146,8 +151,8 @@ on the bench until the situation calls for it.
 
 The five I actually reach for every session:
 
+- **[`fankeel`](https://github.com/FanFantom9452/FanKeel)** — mine, written from scratch. A session owns one named task, and the rules of its current stage are restated on every prompt rather than once at the top; it also warns when another live terminal is in the same files. `/fankeel` is the way in.
 - **`ponytail`** — lazy-senior-dev mode: YAGNI, stdlib / native before deps, shortest working diff.
-- **`caveman`** — ultra-terse prose mode (~75% chatter token cut). ponytail explicitly pairs with it — *"pair with Caveman for terse prose"* — so the two ride together every session: ponytail trims the code, caveman trims the talk. Code blocks, commits, and security notes stay normal in both.
 - **`superpowers`** — brainstorming, TDD, debugging, verification-before-completion.
 - **`context7`** — live library docs lookup.
 - **`playwright`** — browser automation; a UI change isn't done until it's been driven in a real browser.
@@ -162,10 +167,6 @@ Pulled out whenever the work touches UI/UX:
   plugins); I mainly pull the **`interaction-design`** plugin (form design,
   error handling, loading states, navigation, state machines) and
   **`ux-strategy`** (information architecture, service blueprints).
-- **`lobehub ux`** — LobeHub's production UX execution checklist
-  (empty/loading/error states, draft protection — never lose user input,
-  async confirm→progress→done patterns); copied manually from
-  [their monorepo](https://github.com/lobehub/lobehub/blob/main/.agents/skills/ux/SKILL.md).
 - **`impeccable`** — [design-language toolkit](https://github.com/pbakaus/impeccable);
   I only reach for the system-side commands (`audit`, `harden`, `onboard`,
   `clarify`, `critique`) — the visual ones stay off, taste-skill owns that lane.
@@ -196,7 +197,7 @@ On hand, pulled out when the situation calls for it:
 - **`huggingface-skills`** *(official bundle)* — wraps the five HF skills below.
 - **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** — HF workflow toolkits.
 
-*Last reviewed: 2026-07-10.*
+*Last reviewed: 2026-09-15.*
 
 ---
 

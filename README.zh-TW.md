@@ -112,16 +112,21 @@
 ## 🤖 我如何和 Claude Code 共同協作
 
 底下是我平常開發的時候喜歡用的清單，也推薦給大家做使用，
-最常用的是 ponytail / caveman / superpowers / context7 / playwright 這五個；
+最常用的是 fankeel / ponytail / superpowers / context7 / playwright 這五個；
 設計工作有專屬一區；另外幾個裝了就默默生效、不用主動叫；
 其餘看情況才拿出來用。
+
+### 我自己的 Marketplace
+
+| Marketplace | 來源 |
+| --- | --- |
+| fankeel | <https://github.com/FanFantom9452/FanKeel> |
 
 ### 第三方 Marketplace
 
 | Marketplace | 來源 |
 | --- | --- |
 | ponytail | <https://github.com/DietrichGebert/ponytail> |
-| caveman | <https://github.com/JuliusBrussee/caveman> |
 | taste-skill | <https://github.com/Leonxlnx/taste-skill> |
 | karpathy-skills | <https://github.com/multica-ai/andrej-karpathy-skills> |
 | huggingface-skills | <https://github.com/huggingface/skills> |
@@ -131,8 +136,8 @@
 
 真的每個 session 都會拿出來用的五個：
 
+- **[`fankeel`](https://github.com/FanFantom9452/FanKeel)** —— 我自己從零寫的。一個 session 只咬一個具名任務，當前階段的規則每次提問都重述一遍，而不是只在開頭講一次；另一個終端機動到同一批檔案時也會示警。入口是 `/fankeel`。
 - **`ponytail`** —— 懶人資深工程師模式：YAGNI、優先用標準庫／原生功能、最短可行 diff。
-- **`caveman`** —— 極簡 terse 輸出模式（廢話 token 砍約 75%）。ponytail 明文要搭它跑 ——「pair with Caveman for terse prose」—— 所以兩個每個 session 一起出動：ponytail 砍 code、caveman 砍話。兩者的程式碼區塊、commit、安全提示都維持正常不壓縮。
 - **`superpowers`** —— brainstorming、TDD、debugging、verification-before-completion。
 - **`context7`** —— 即時函式庫文件查詢。
 - **`playwright`** —— 瀏覽器自動化；UI 改動沒在真瀏覽器跑過就不算完成。
@@ -146,11 +151,6 @@
 - **[`designer-skills`](https://github.com/Owl-Listener/designer-skills)** —— 企業級系統層 UX 技能包（97 skill／9 plugin），
   我主要抽 **`interaction-design`**（表單設計、錯誤處理、載入狀態、導覽、
   狀態機）和 **`ux-strategy`**（資訊架構、service blueprint）兩個 plugin 用。
-- **`lobehub ux`** —— LobeHub 上線產品的 UX 執行清單
-  （空／載入／錯誤狀態、草稿保護——絕不弄丟使用者輸入、
-  async confirm→progress→done 操作模式），從
-  [他們的 monorepo](https://github.com/lobehub/lobehub/blob/main/.agents/skills/ux/SKILL.md)
-  手動抄一份 SKILL.md 進來。
 - **`impeccable`** —— [設計語言工具箱](https://github.com/pbakaus/impeccable)，
   我只用系統面的指令（`audit`、`harden`、`onboard`、`clarify`、`critique`），
   視覺類指令不開——那條線歸 taste-skill 管。
@@ -181,7 +181,7 @@
 - **`huggingface-skills`** *(官方 bundle)* —— 包下面五個 HF skill。
 - **`hugging-face-dataset-viewer`** · **`hugging-face-model-trainer`** · **`hugging-face-vision-trainer`** · **`hugging-face-evaluation`** · **`transformers-js`** —— HF 工作流工具集。
 
-*最後檢視：2026-07-10。*
+*最後檢視：2026-09-15。*
 
 ---
 

@@ -20,7 +20,8 @@
 
 | Tool | What it does | Author |
 | --- | --- | --- |
-| [claude-kit](https://github.com/FanFantom9452/claude-kit) | My whole Claude Code setup in one command | [@FanFantom9452](https://github.com/FanFantom9452) · bundles forks of [@JuliusBrussee](https://github.com/JuliusBrussee) / [@DietrichGebert](https://github.com/DietrichGebert) |
+| [claude-kit](https://github.com/FanFantom9452/claude-kit) | My whole Claude Code setup in one command | [@FanFantom9452](https://github.com/FanFantom9452) · bundles a fork of [@DietrichGebert](https://github.com/DietrichGebert) |
+| [FanKeel](https://github.com/FanFantom9452/FanKeel) | Keeps a Claude Code session on one named task — seven stages, restated on every prompt | [@FanFantom9452](https://github.com/FanFantom9452) |
 | [ClaudeCodeCLI-TokenBar](https://github.com/FanFantom9452/ClaudeCodeCLI-TokenBar) | Statusline showing context window and quota as bars | [@FanFantom9452](https://github.com/FanFantom9452) |
 | [AI-Coding-Security](https://github.com/FanFantom9452/AI-Coding-Security) | Catches hallucinated packages, typosquats, over-wide agent permissions | [@FanFantom9452](https://github.com/FanFantom9452) |
 
